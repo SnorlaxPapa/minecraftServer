@@ -23,3 +23,16 @@ export async function DiscordRequest(endpoint, options) {
   // return original response
   return res;
 }
+
+
+export async function InstallGlobalCommands(appId, commands) {
+  // API endpoint to overwrite global commands
+  const endpoint = `applications/${appId}/commands`;
+
+  try {
+    //update our app with the new commands
+    await DiscordRequest(endpoint, { method: 'PUT', body: commands });
+  } catch (err) {
+    console.error(err);
+  }
+}
