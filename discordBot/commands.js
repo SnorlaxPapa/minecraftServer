@@ -3,7 +3,7 @@ import { InstallGlobalCommands } from './utils.js';
 
 
 const START_COMMAND = {
-    name: "start_server",
+    name: "start",
     description: "Start minecraft server",
     type: 1,
     integration_types: [0], 
@@ -11,7 +11,7 @@ const START_COMMAND = {
 }
 
 const END_COMMAND = {
-    name: "stop_server",
+    name: "stop",
     description: "Stop minecraft server",
     type: 1,
     integration_types: [0], 
