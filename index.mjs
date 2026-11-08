@@ -7,11 +7,6 @@ const ROUTED_FUNC = process.env.internalName;
 export const handler = async (event) => {
   //handle discord request, route to internal handler, then return;
   const valid = await verifyDiscord(event);
-  console.log("Public key length:", process.env.PUBLIC_KEY?.length);
-  console.log(
-    "Public key is hex:",
-    /^[0-9a-f]{64}$/i.test(process.env.PUBLIC_KEY ?? "")
-  );
   if (!valid){
     return { statusCode: 401 };
   }
