@@ -30,7 +30,7 @@ export async function InstallGlobalCommands(appId, commands) {
   const endpoint = `applications/${appId}/commands`;
 
   try {
-    //update our app with the new commands
+    //overwrite our app with the new commands
     await DiscordRequest(endpoint, { method: 'PUT', body: commands });
   } catch (err) {
     console.error(err);
