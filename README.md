@@ -22,4 +22,8 @@ I think it saves me ~18$ a month on hosting? It utilizes 8GB of RAM which normal
 - `index.mjs` contains the code for the public-facing Lambda function.
 - `internalHandler.mjs` contains code for the internal Lambda function handling server control.
 
+## Architecture
+Special thanks to ChatGPT for drawing my picture for me
+![Minecraft server architecture](assets/minecraft-architecture.png)
+
 
